@@ -33,5 +33,11 @@
     "demo": "http://jsfiddle.net/fosco/55XLd/",
     "dependencies": {
         "jquery": ">=1.5"
+    },
+    "devDependencies": {
+        "jquery": "*",
+        "grunt": "~0.4.4",
+        "grunt-contrib-jshint": "~0.10.0",
+        "grunt-contrib-uglify": "~0.4.0"
     }
 }

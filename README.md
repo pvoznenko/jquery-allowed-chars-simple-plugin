@@ -24,6 +24,17 @@ Install and manage jQuery Allowed Chars simple plugin using [Bower][4].
 $ bower install jquery.allowed-chars
 ```
 
+Install with NPM
+------------------
+
+Install and manage jQuery Allowed Chars simple plugin using [NPM][5].
+
+```
+$ npm install jquery.allowed-chars
+```
+
+Install and manage jQuery Allowed Chars simple plugin using [Bower][4].
+
 Usage Example
 -------------
 
@@ -60,3 +71,4 @@ Allow regular expression as parameter.
 [2]: http://jsfiddle.net/fosco/55XLd/
 [3]: http://jsfiddle.net/
 [4]: http://bower.io/
+[5]: https://www.npmjs.org/

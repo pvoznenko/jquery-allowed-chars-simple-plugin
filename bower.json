@@ -1,0 +1,11 @@
+{
+    "name": "jquery.allowed-chars",
+    "version": "0.1.2",
+    "main": "jquery.allowed-chars.js",
+    "ignore": [
+        ".gitignore"
+    ],
+    "dependencies": {
+        "jquery": "*"
+    }
+}

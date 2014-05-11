@@ -33,8 +33,6 @@ Install and manage jQuery Allowed Chars simple plugin using [NPM][5].
 $ npm install jquery.allowed-chars
 ```
 
-Install and manage jQuery Allowed Chars simple plugin using [Bower][4].
-
 Usage Example
 -------------
 

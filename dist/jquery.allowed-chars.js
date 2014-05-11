@@ -1,9 +1,9 @@
 /**
- * jQuery Allowed Chars simple plugin version: 0.1.2, date: 03/11/2011
+ * jQuery Allowed Chars simple plugin version: 0.1.3, date: 11/05/2014
  *
  * jQuery plugin to restrict users for typing only allowed chars for specified element
  *
- * Copyright (c) 2011 Pavlo Voznenko (p.voznenko@gmail.com)
+ * Copyright (c) 2014 Pavlo Voznenko (p.voznenko@gmail.com)
  * https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin
  * Licensed under the MIT license:
  * http://www.opensource.org/licenses/mit-license.php
@@ -28,7 +28,6 @@
  * Demo available on: http://jsfiddle.net/fosco/55XLd/
  *
  */
-/*global $, jQuery*/
 (function($) {
     "use strict";
 
@@ -49,15 +48,16 @@
              * @param {String} options string of allowed chars
              * @returns {boolean}
              */
-            'init' : function (options) {
+            'init' : function ( options )
+            {
                 if (options !== undefined) {
                     switch (typeof options) {
-                    case "string":
-                        settings.allowedCharsList = options.toLowerCase();
-                        break;
-                    default:
-                        return false;
-                    }
+                        case "string":
+                            settings.allowedCharsList = options.toLowerCase();
+                            break;
+                        default:
+                            return false;
+                        }
                 }
                 return true;
             }

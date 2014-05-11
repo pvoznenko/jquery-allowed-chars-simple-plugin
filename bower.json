@@ -1,11 +1,15 @@
 {
     "name": "jquery.allowed-chars",
-    "version": "0.1.2",
-    "main": "jquery.allowed-chars.js",
+    "version": "0.1.3",
+    "main": "dist/jquery.allowed-chars.js",
+    "license": "MIT",
     "ignore": [
-        ".gitignore"
+        ".gitignore",
+        "package.json",
+        "Gruntfile.js",
+        ".jshintrc"
     ],
-    "dependencies": {
+    "devDependencies": {
         "jquery": "*"
     }
 }

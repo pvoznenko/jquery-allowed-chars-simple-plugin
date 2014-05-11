@@ -12,7 +12,7 @@ Include the jQuery library and the `jquery.allowed-chars.js` file.
 
 ```html
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.allowed-chars.js"></script>
+<script type="text/javascript" src="/dist/jquery.allowed-chars.js"></script>
 ```
 
 Install with Bower

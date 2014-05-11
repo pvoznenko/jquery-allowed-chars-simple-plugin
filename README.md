@@ -15,8 +15,7 @@ Include the jQuery library and the `jquery.allowed-chars.js` file.
 <script type="text/javascript" src="/dist/jquery.allowed-chars.js"></script>
 ```
 
-Install with Bower
-------------------
+### Install with Bower
 
 Install and manage jQuery Allowed Chars simple plugin using [Bower][4].
 
@@ -24,8 +23,7 @@ Install and manage jQuery Allowed Chars simple plugin using [Bower][4].
 $ bower install jquery.allowed-chars
 ```
 
-Install with NPM
-------------------
+### Install with NPM
 
 Install and manage jQuery Allowed Chars simple plugin using [NPM][5].
 

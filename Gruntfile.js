@@ -9,9 +9,9 @@ module.exports = function(grunt) {
         uglify: {
             allowedChars: {
                 options: {
-                    banner: "/*! <%= pkg.name %> <%= grunt.template.today('dd-mm-yyyy') %> Copyright (c) 2014 Pavlo Voznenko (p.voznenko@gmail.com) " +
-                        "https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin " +
-                        "under MIT license: http://www.opensource.org/licenses/mit-license.php */",
+                    banner: "/*! <%= pkg.name %> <%= grunt.template.today('dd-mm-yyyy') %> <%= pkg.title %> " +
+                        "v<%= pkg.version %> Copyright (c) 2014 <%= pkg.author %> and other contributors. " +
+                        "Distributed under the <%= pkg.license %> license. <%= pkg.homepage %> */",
                     mangle: true,
                     compress: true,
                     sourceMap: true

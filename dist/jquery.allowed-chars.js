@@ -1,18 +1,17 @@
 /**
- * jQuery Allowed Chars simple plugin version: 1.0.2, date: 27/05/2014
+ * jQuery Allowed Chars simple plugin version: 1.0.3, date: 27/05/2014
  *
  * jQuery plugin to restrict users for typing only allowed chars (regExp) for specified element
  *
- * Copyright (c) 2014 Pavlo Voznenko (p.voznenko@gmail.com)
- * https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin
- * Licensed under the MIT license:
- * http://www.opensource.org/licenses/mit-license.php
+ * Copyright (c) 2014 Pavlo Voznenko (p.voznenko@gmail.com) and other contributors
+ * Distributed under the MIT License
  *
- * Library require jQuery been loaded.
+ * GitHub: https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin
+ * jQuery Plugin: http://plugins.jquery.com/jquery.allowed-chars/
  *
- * Usage Example: @see my github: https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin
+ * Usage Example: @see github: https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin
  *
- * Or Demo available on: http://jsfiddle.net/fosco/55XLd/
+ * Demo available on: http://jsfiddle.net/fosco/55XLd/
  */
 ;(function($, undefined) {
     "use strict";

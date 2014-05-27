@@ -62,7 +62,7 @@ Custom chars [A, b, s, D] not case sensitive, full options:
 So, to restrict input values to integers for input with id `default` use:
 
 ```js
-// by default plugin allows only numberical characters: 0123456789
+// by default plugin allows only numerical characters: 0123456789
 $('#default').allowedChars();
 ```
 
@@ -87,7 +87,7 @@ You can also pass an object with options for plugin initialization:
 
 ```js
 // you can pass object with options.
-// For example, a list of allowed chars, without case sensititvity check
+// For example, a list of allowed chars, without case sensitivity check
 $('#full').allowedChars({
     allowed: 'AbsD',
     caseSensitive: false
@@ -103,6 +103,12 @@ Demo
 
 You can run demo on [JSFiddle][3]: [http://jsfiddle.net/fosco/55XLd/][2]
 
+## Copyright
+
+Copyright (C) 2014 Pavlo Voznenko and other [contributors][11].
+
+Distributed under the MIT License.
+
 [1]: http://jquery.com/
 [2]: http://jsfiddle.net/fosco/55XLd/
 [3]: http://jsfiddle.net/
@@ -113,3 +119,4 @@ You can run demo on [JSFiddle][3]: [http://jsfiddle.net/fosco/55XLd/][2]
 [8]: http://plugins.jquery.com/
 [9]: http://www.cdnjs.com/libraries/jquery.allowed-chars
 [10]: http://www.cdnjs.com/
+[11]: https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin/graphs/contributors

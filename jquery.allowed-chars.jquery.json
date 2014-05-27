@@ -7,9 +7,12 @@
         "plugin",
         "simple",
         "allowed",
-        "chars"
+        "chars",
+        "allowed chars",
+        "regular expression",
+        "regExp"
     ],
-    "version": "0.1.3",
+    "version": "1.0.0",
     "author": {
         "name": "Pavlo Voznenko",
         "url": "https://github.com/fosco-maestro/"

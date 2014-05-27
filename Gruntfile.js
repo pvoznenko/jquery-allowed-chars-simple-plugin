@@ -1,6 +1,11 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        karma: {
+            unit: {
+                configFile: 'karma.conf.js'
+            }
+        },
         uglify: {
             allowedChars: {
                 options: {
@@ -26,6 +31,8 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-karma');
 
-    grunt.registerTask('default', ['jshint', 'uglify']);
+    grunt.registerTask('default', ['karma', 'jshint', 'uglify']);
+    grunt.registerTask('test', ['karma', 'jshint']);
 };

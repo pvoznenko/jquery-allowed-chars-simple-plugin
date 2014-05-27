@@ -1,14 +1,13 @@
-jQuery Allowed Chars - simple plugin
-====================================
+# jQuery Allowed Chars - simple plugin
+
 
 jQuery plugin to restrict users for typing only allowed chars for specified element.
 
-Library require [jQuery][1] been loaded.
+This library requires [jQuery][1] to be loaded.
 
-Setup
------
+## Setup
 
-Include the jQuery library and the `jquery.allowed-chars.js` file.
+Include  jQuery library and the `jquery.allowed-chars.js` file.
 
 ```html
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -17,7 +16,7 @@ Include the jQuery library and the `jquery.allowed-chars.js` file.
 
 ### Download plugin from jQuery Plugins
 
-You can download jQuery Allowed Chars simple plugin from [jQuery Plugins][8] on following link:
+You can download jQuery Allowed Chars simple plugin from [jQuery Plugins][8] here:
 [http://plugins.jquery.com/jquery.allowed-chars/][7]
 
 ### Install with Bower
@@ -60,44 +59,44 @@ Custom chars [A, b, s, D] not case sensitive, full options:
 <input type='text' id="full" />
 ```
 
-So, to strict input valuables to use only integer for input with id `default` use following:
+So, to restrict input values to integers for input with id `default` use:
 
 ```js
-// by default plugin allows only integer chars: 0123456789
+// by default plugin allows only numberical characters: 0123456789
 $('#default').allowedChars();
 ```
 
-For customized allowed char list, pass string with chars as parameter:
+For a custom allowed char list, pass the string with chars as parameter:
 
 ```js
-// you can specified another list of chars that allowed,
+// you can specify a different list of allowed characters,
 // for example [a, B, 1, {space}, _]
-// list is case sensitive
+// list is by default case sensitive
 $('#custom').allowedChars('aB1 _');
 ```
 
-You can use regular expression to strict input valuables:
+You can also use a regular expression to restrict input values:
 
 ```js
-// you can use regular expression
+// you can use regular expressions
 // \d - only integers allowed
 $('#regexp').allowedChars(/\d/);
 ```
 
-Also you can specified object with options for plugin:
+You can also pass an object with options for plugin initialization:
 
 ```js
-// you can send object with options.
-// For example list of allowed chars and make check not case sensitive
+// you can pass object with options.
+// For example, a list of allowed chars, without case sensititvity check
 $('#full').allowedChars({
     allowed: 'AbsD',
     caseSensitive: false
 });
 ```
 
-Be aware that option `caseSensitive` is not affecting work of plugin if you using regular expression.
+Be aware that `caseSensitive` option does not affect work of plugin if you use regular expressions.
 
-On following link you can read more about regular expressions in javascript: [http://www.w3schools.com/jsref/jsref_obj_regexp.asp][6]
+Here you can read more about regular expressions in javascript: [http://www.w3schools.com/jsref/jsref_obj_regexp.asp][6]
 
 Demo
 ----

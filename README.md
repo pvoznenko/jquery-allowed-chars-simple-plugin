@@ -36,6 +36,11 @@ Install and manage jQuery Allowed Chars simple plugin using [NPM][5].
 $ npm install jquery.allowed-chars
 ```
 
+### CDN
+
+You can use [CDNJS][10] for this plugin on following link:
+[http://www.cdnjs.com/libraries/jquery.allowed-chars][9]
+
 Usage Example
 -------------
 
@@ -107,3 +112,5 @@ You can run demo on [JSFiddle][3]: [http://jsfiddle.net/fosco/55XLd/][2]
 [6]: http://www.w3schools.com/jsref/jsref_obj_regexp.asp
 [7]: http://plugins.jquery.com/jquery.allowed-chars/
 [8]: http://plugins.jquery.com/
+[9]: http://www.cdnjs.com/libraries/jquery.allowed-chars
+[10]: http://www.cdnjs.com/

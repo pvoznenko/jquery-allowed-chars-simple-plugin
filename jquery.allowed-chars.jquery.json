@@ -8,11 +8,11 @@
         "simple",
         "allowed",
         "chars",
-        "allowed chars",
-        "regular expression",
+        "regular",
+        "expression",
         "regExp"
     ],
-    "version": "1.0.0",
+    "version": "1.0.2",
     "author": {
         "name": "Pavlo Voznenko",
         "url": "https://github.com/fosco-maestro/"

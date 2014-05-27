@@ -1,6 +1,6 @@
 {
     "name": "jquery.allowed-chars",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "main": "dist/jquery.allowed-chars.js",
     "license": "MIT",
     "ignore": [
@@ -8,6 +8,7 @@
         "package.json",
         "Gruntfile.js",
         "karma.conf.js",
+        "jquery.allowed-chars.jquery.json",
         ".jshintrc"
     ],
     "devDependencies": {

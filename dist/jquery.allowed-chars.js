@@ -1,5 +1,5 @@
 /**
- * jQuery Allowed Chars simple plugin version: 1.0.0, date: 25/05/2014
+ * jQuery Allowed Chars simple plugin version: 1.0.1, date: 27/05/2014
  *
  * jQuery plugin to restrict users for typing only allowed chars (regExp) for specified element
  *

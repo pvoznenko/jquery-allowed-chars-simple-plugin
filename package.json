@@ -1,7 +1,7 @@
 {
   "name": "jquery.allowed-chars",
   "title": "jQuery Allowed Chars - simple plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jQuery plugin to restrict users for typing only allowed chars for specified element",
   "main": "dist/jquery.allowed-chars.js",
   "repository": {

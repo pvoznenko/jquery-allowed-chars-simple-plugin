@@ -37,10 +37,17 @@ Usage Example
 In our HTML code we have 4 inputs:
 
 ```html
-Only integer chars [0123456789]: <input type='text' id="default"/><br/>
-Custom chars [a, B, 1, {space}, _]: <input type='text' id="custom"/><br/>
-RegExp [/\d/] -- only integers: <input type='text' id="regexp" /><br/>
-Custom chars [A, b, s, D] not case sensitive, full options: <input type='text' id="full" />
+Only integer chars [0123456789]: 
+<input type='text' id="default"/>
+
+Custom chars [a, B, 1, {space}, _]: 
+<input type='text' id="custom"/>
+
+RegExp [/\d/] -- only integers: 
+<input type='text' id="regexp" />
+
+Custom chars [A, b, s, D] not case sensitive, full options: 
+<input type='text' id="full" />
 ```
 
 So, to strict input valuables to use only integer for input with id `default` use following:
@@ -86,11 +93,6 @@ Demo
 ----
 
 You can run demo on [JSFiddle][3]: [http://jsfiddle.net/fosco/55XLd/][2]
-
-TODO
-----
-
-Allow regular expression as parameter.
 
 [1]: http://jquery.com/
 [2]: http://jsfiddle.net/fosco/55XLd/

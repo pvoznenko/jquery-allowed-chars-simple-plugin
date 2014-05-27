@@ -15,6 +15,11 @@ Include the jQuery library and the `jquery.allowed-chars.js` file.
 <script type="text/javascript" src="dist/jquery.allowed-chars.js"></script>
 ```
 
+### Download plugin from jQuery Plugins
+
+You can download jQuery Allowed Chars simple plugin from [jQuery Plugins][8] on following link:
+[http://plugins.jquery.com/jquery.allowed-chars/][7]
+
 ### Install with Bower
 
 Install and manage jQuery Allowed Chars simple plugin using [Bower][4].
@@ -100,3 +105,5 @@ You can run demo on [JSFiddle][3]: [http://jsfiddle.net/fosco/55XLd/][2]
 [4]: http://bower.io/
 [5]: https://www.npmjs.org/
 [6]: http://www.w3schools.com/jsref/jsref_obj_regexp.asp
+[7]: http://plugins.jquery.com/jquery.allowed-chars/
+[8]: http://plugins.jquery.com/

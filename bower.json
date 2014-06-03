@@ -1,6 +1,6 @@
 {
     "name": "jquery.allowed-chars",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "main": "dist/jquery.allowed-chars.js",
     "license": "MIT",
     "ignore": [

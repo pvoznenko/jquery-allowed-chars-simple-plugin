@@ -9,7 +9,8 @@
         "Gruntfile.js",
         "karma.conf.js",
         "jquery.allowed-chars.jquery.json",
-        ".jshintrc"
+        ".jshintrc",
+        ".travis.yml"
     ],
     "devDependencies": {
         "jquery": "*"

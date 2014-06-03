@@ -1,6 +1,6 @@
 # jQuery Allowed Chars - simple plugin
 
-![Build Status][12]
+[![Build Status][13]][14]
 
 jQuery plugin to restrict users for typing only allowed chars for specified element.
 
@@ -97,7 +97,9 @@ $('#full').allowedChars({
 
 Be aware that `caseSensitive` option does not affect work of plugin if you use regular expressions.
 
-Here you can read more about regular expressions in javascript: [http://www.w3schools.com/jsref/jsref_obj_regexp.asp][6]
+Here you can read more about regular expressions in javascript: 
+* [http://www.w3schools.com/jsref/jsref_obj_regexp.asp][6]
+* [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions][12]
 
 Demo
 ----
@@ -121,4 +123,6 @@ Distributed under the MIT License.
 [9]: http://www.cdnjs.com/libraries/jquery.allowed-chars
 [10]: http://www.cdnjs.com/
 [11]: https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin/graphs/contributors
-[12]: https://travis-ci.org/fosco-maestro/jquery-allowed-chars-simple-plugin.svg?branch=master
+[12]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+[13]: https://travis-ci.org/fosco-maestro/jquery-allowed-chars-simple-plugin.svg
+[14]: https://travis-ci.org/fosco-maestro/jquery-allowed-chars-simple-plugin

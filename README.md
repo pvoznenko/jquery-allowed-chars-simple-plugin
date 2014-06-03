@@ -1,5 +1,6 @@
 # jQuery Allowed Chars - simple plugin
 
+![Build Status][12]
 
 jQuery plugin to restrict users for typing only allowed chars for specified element.
 
@@ -120,3 +121,4 @@ Distributed under the MIT License.
 [9]: http://www.cdnjs.com/libraries/jquery.allowed-chars
 [10]: http://www.cdnjs.com/
 [11]: https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin/graphs/contributors
+[12]: https://travis-ci.org/fosco-maestro/jquery-allowed-chars-simple-plugin.svg?branch=master

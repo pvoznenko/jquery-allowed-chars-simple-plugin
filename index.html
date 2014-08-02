@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>jQuery Allowed Chars  - simple plugin by fosco-maestro</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>jQuery Allowed Chars  - simple plugin</h1>
+          <p>jQuery plugin to restrict users for typing only allowed chars for specified element</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/fosco-maestro">fosco-maestro</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="jquery-allowed-chars---simple-plugin" class="anchor" href="#jquery-allowed-chars---simple-plugin"><span class="octicon octicon-link"></span></a>jQuery Allowed Chars - simple plugin</h1>
+
+<p><a href="https://travis-ci.org/fosco-maestro/jquery-allowed-chars-simple-plugin"><img src="https://travis-ci.org/fosco-maestro/jquery-allowed-chars-simple-plugin.svg" alt="Build Status"></a></p>
+
+<p>jQuery plugin to restrict users for typing only allowed chars for specified element.</p>
+
+<p>This library requires <a href="http://jquery.com/">jQuery</a> to be loaded.</p>
+
+<h2>
+<a name="setup" class="anchor" href="#setup"><span class="octicon octicon-link"></span></a>Setup</h2>
+
+<p>Include  jQuery library and the <code>jquery.allowed-chars.js</code> file.</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/jquery.allowed-chars.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<h3>
+<a name="download-plugin-from-jquery-plugins" class="anchor" href="#download-plugin-from-jquery-plugins"><span class="octicon octicon-link"></span></a>Download plugin from jQuery Plugins</h3>
+
+<p>You can download jQuery Allowed Chars simple plugin from <a href="http://plugins.jquery.com/">jQuery Plugins</a> here:
+<a href="http://plugins.jquery.com/jquery.allowed-chars/">http://plugins.jquery.com/jquery.allowed-chars/</a></p>
+
+<h3>
+<a name="install-with-bower" class="anchor" href="#install-with-bower"><span class="octicon octicon-link"></span></a>Install with Bower</h3>
+
+<p>Install and manage jQuery Allowed Chars simple plugin using <a href="http://bower.io/">Bower</a>.</p>
+
+<pre><code>$ bower install jquery.allowed-chars
+</code></pre>
+
+<h3>
+<a name="install-with-npm" class="anchor" href="#install-with-npm"><span class="octicon octicon-link"></span></a>Install with NPM</h3>
+
+<p>Install and manage jQuery Allowed Chars simple plugin using <a href="https://www.npmjs.org/">NPM</a>.</p>
+
+<pre><code>$ npm install jquery.allowed-chars
+</code></pre>
+
+<h3>
+<a name="cdn" class="anchor" href="#cdn"><span class="octicon octicon-link"></span></a>CDN</h3>
+
+<p>You can use <a href="http://www.cdnjs.com/">CDNJS</a> for this plugin on following link:
+<a href="http://www.cdnjs.com/libraries/jquery.allowed-chars">http://www.cdnjs.com/libraries/jquery.allowed-chars</a></p>
+
+<h2>
+<a name="usage-example" class="anchor" href="#usage-example"><span class="octicon octicon-link"></span></a>Usage Example</h2>
+
+<p>In our HTML code we have 4 inputs:</p>
+
+<div class="highlight highlight-html"><pre>Only integer chars [0123456789]: 
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'text'</span> <span class="na">id=</span><span class="s">"default"</span><span class="nt">/&gt;</span>
+
+Custom chars [a, B, 1, {space}, _]: 
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'text'</span> <span class="na">id=</span><span class="s">"custom"</span><span class="nt">/&gt;</span>
+
+RegExp [/\d/] -- only integers: 
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'text'</span> <span class="na">id=</span><span class="s">"regexp"</span> <span class="nt">/&gt;</span>
+
+Custom chars [A, b, s, D] not case sensitive, full options: 
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'text'</span> <span class="na">id=</span><span class="s">"full"</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+<p>So, to restrict input values to integers for input with id <code>default</code> use:</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// by default plugin allows only numerical characters: 0123456789</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#default'</span><span class="p">).</span><span class="nx">allowedChars</span><span class="p">();</span>
+</pre></div>
+
+<p>For a custom allowed char list, pass the string with chars as parameter:</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// you can specify a different list of allowed characters,</span>
+<span class="c1">// for example [a, B, 1, {space}, _]</span>
+<span class="c1">// list is by default case sensitive</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#custom'</span><span class="p">).</span><span class="nx">allowedChars</span><span class="p">(</span><span class="s1">'aB1 _'</span><span class="p">);</span>
+</pre></div>
+
+<p>You can also use a regular expression to restrict input values:</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// you can use regular expressions</span>
+<span class="c1">// \d - only integers allowed</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#regexp'</span><span class="p">).</span><span class="nx">allowedChars</span><span class="p">(</span><span class="sr">/\d/</span><span class="p">);</span>
+</pre></div>
+
+<p>You can also pass an object with options for plugin initialization:</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// you can pass object with options.</span>
+<span class="c1">// For example, a list of allowed chars, without case sensitivity check</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#full'</span><span class="p">).</span><span class="nx">allowedChars</span><span class="p">({</span>
+    <span class="nx">allowed</span><span class="o">:</span> <span class="s1">'AbsD'</span><span class="p">,</span>
+    <span class="nx">caseSensitive</span><span class="o">:</span> <span class="kc">false</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>Be aware that <code>caseSensitive</code> option does not affect work of plugin if you use regular expressions.</p>
+
+<p>Here you can read more about regular expressions in javascript: </p>
+
+<ul>
+<li><a href="http://www.w3schools.com/jsref/jsref_obj_regexp.asp">http://www.w3schools.com/jsref/jsref_obj_regexp.asp</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions</a></li>
+</ul><h2>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<p>You can run demo on <a href="http://jsfiddle.net/">JSFiddle</a>: <a href="http://jsfiddle.net/fosco/55XLd/">http://jsfiddle.net/fosco/55XLd/</a></p>
+
+<h2>
+<a name="copyright" class="anchor" href="#copyright"><span class="octicon octicon-link"></span></a>Copyright</h2>
+
+<p>Copyright (C) 2014 Pavlo Voznenko and other <a href="https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin/graphs/contributors">contributors</a>.</p>
+
+<p>Distributed under the MIT License.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-53453688-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>

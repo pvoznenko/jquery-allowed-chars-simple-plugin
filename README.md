@@ -41,8 +41,7 @@ $ npm install jquery.allowed-chars
 You can use [CDNJS][10] for this plugin on following link:
 [http://www.cdnjs.com/libraries/jquery.allowed-chars][9]
 
-Usage Example
--------------
+## Usage Example
 
 In our HTML code we have 4 inputs:
 
@@ -62,14 +61,14 @@ Custom chars [A, b, s, D] not case sensitive, full options:
 
 So, to restrict input values to integers for input with id `default` use:
 
-```js
+```javascript
 // by default plugin allows only numerical characters: 0123456789
 $('#default').allowedChars();
 ```
 
 For a custom allowed char list, pass the string with chars as parameter:
 
-```js
+```javascript
 // you can specify a different list of allowed characters,
 // for example [a, B, 1, {space}, _]
 // list is by default case sensitive
@@ -78,7 +77,7 @@ $('#custom').allowedChars('aB1 _');
 
 You can also use a regular expression to restrict input values:
 
-```js
+```javascript
 // you can use regular expressions
 // \d - only integers allowed
 $('#regexp').allowedChars(/\d/);
@@ -86,7 +85,7 @@ $('#regexp').allowedChars(/\d/);
 
 You can also pass an object with options for plugin initialization:
 
-```js
+```javascript
 // you can pass object with options.
 // For example, a list of allowed chars, without case sensitivity check
 $('#full').allowedChars({
@@ -101,8 +100,40 @@ Here you can read more about regular expressions in javascript:
 * [http://www.w3schools.com/jsref/jsref_obj_regexp.asp][6]
 * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions][12]
 
-Demo
-----
+### AngularJS Directive
+
+If you using [AngularJS](https://angularjs.org/) in your project, you can write small Directive to use jQuery Allowed Chars plugin.
+
+First load plugin:
+
+```html
+<script type="text/javascript" src="dist/jquery.allowed-chars.js"></script>
+```
+
+Then create your directive for jQuery Allowed Chars plugin:
+
+```javascript
+angular.module('exampleModule').directive('allowedChars', function(){
+    return {
+        restrict: 'A',
+        link: function(scope, element) {
+            // allow only digits and low case letters
+            element.allowedChars(/[a-z]|[0-9]/);
+        }
+    };
+});
+```
+
+Use new directive in your html element:
+
+```html
+Allow only digits and low case letters:
+<input type='text' allowed-chars/>
+```
+
+More about Directives in [AngularJS](https://angularjs.org/) read following documentation: [https://docs.angularjs.org/guide/directive](https://docs.angularjs.org/guide/directive)
+
+## Demo
 
 You can run demo on [JSFiddle][3]: [http://jsfiddle.net/fosco/55XLd/][2]
 

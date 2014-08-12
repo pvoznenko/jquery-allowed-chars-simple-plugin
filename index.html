@@ -135,7 +135,38 @@ Custom chars [A, b, s, D] not case sensitive, full options:
 <ul>
 <li><a href="http://www.w3schools.com/jsref/jsref_obj_regexp.asp">http://www.w3schools.com/jsref/jsref_obj_regexp.asp</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions</a></li>
-</ul><h2>
+</ul><h3>
+<a name="angularjs-directive" class="anchor" href="#angularjs-directive"><span class="octicon octicon-link"></span></a>AngularJS Directive</h3>
+
+<p>If you using <a href="https://angularjs.org/">AngularJS</a> in your project, you can write small Directive to use jQuery Allowed Chars plugin.</p>
+
+<p>First load plugin:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/jquery.allowed-chars.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<p>Then create your directive for jQuery Allowed Chars plugin:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'exampleModule'</span><span class="p">).</span><span class="nx">directive</span><span class="p">(</span><span class="s1">'allowedChars'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="nx">restrict</span><span class="o">:</span> <span class="s1">'A'</span><span class="p">,</span>
+        <span class="nx">link</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">scope</span><span class="p">,</span> <span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// allow only digits and low case letters</span>
+            <span class="nx">element</span><span class="p">.</span><span class="nx">allowedChars</span><span class="p">(</span><span class="sr">/[a-z]|[0-9]/</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>Use new directive in your html element:</p>
+
+<div class="highlight highlight-html"><pre>Allow only digits and low case letters:
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'text'</span> <span class="na">allowed-chars</span><span class="nt">/&gt;</span>
+</pre></div>
+
+<p>More about Directives in <a href="https://angularjs.org/">AngularJS</a> read following documentation: <a href="https://docs.angularjs.org/guide/directive">https://docs.angularjs.org/guide/directive</a></p>
+
+<h2>
 <a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
 
 <p>You can run demo on <a href="http://jsfiddle.net/">JSFiddle</a>: <a href="http://jsfiddle.net/fosco/55XLd/">http://jsfiddle.net/fosco/55XLd/</a></p>

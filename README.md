@@ -1,6 +1,7 @@
 # jQuery Allowed Chars - simple plugin
 
 [![Build Status][13]][14]
+[![NPM version](https://img.shields.io/npm/v/jquery.allowed-chars.svg)](https://www.npmjs.org/package/jquery.allowed-chars)
 
 jQuery plugin to restrict users for typing only allowed chars for specified element.
 

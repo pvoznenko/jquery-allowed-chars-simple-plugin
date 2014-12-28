@@ -3,4 +3,5 @@ node_modules
 .DS_Store
 .bower.json
 .npm-debug.log
+npm-debug.log
 bower_components

@@ -154,7 +154,7 @@ Distributed under the MIT License.
 [8]: http://plugins.jquery.com/
 [9]: http://www.cdnjs.com/libraries/jquery.allowed-chars
 [10]: http://www.cdnjs.com/
-[11]: https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin/graphs/contributors
+[11]: https://github.com/pvoznenko/jquery-allowed-chars-simple-plugin/graphs/contributors
 [12]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
-[13]: https://travis-ci.org/fosco-maestro/jquery-allowed-chars-simple-plugin.svg
-[14]: https://travis-ci.org/fosco-maestro/jquery-allowed-chars-simple-plugin
+[13]: https://travis-ci.org/pvoznenko/jquery-allowed-chars-simple-plugin.svg
+[14]: https://travis-ci.org/pvoznenko/jquery-allowed-chars-simple-plugin

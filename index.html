@@ -1,64 +1,50 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>jQuery Allowed Chars  - simple plugin by fosco-maestro</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <meta charset="UTF-8">
+    <title>jQuery Allowed Chars  - simple plugin by pvoznenko</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+    <section class="page-header">
+      <h1 class="project-name">jQuery Allowed Chars  - simple plugin</h1>
+      <h2 class="project-tagline">jQuery plugin to restrict users for typing only allowed chars for specified element</h2>
+      <a href="https://github.com/pvoznenko/jquery-allowed-chars-simple-plugin" class="btn">View on GitHub</a>
+      <a href="https://github.com/pvoznenko/jquery-allowed-chars-simple-plugin/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/pvoznenko/jquery-allowed-chars-simple-plugin/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <div class="wrapper">
+    <section class="main-content">
+      <h1>
+<a id="jquery-allowed-chars---simple-plugin" class="anchor" href="#jquery-allowed-chars---simple-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery Allowed Chars - simple plugin</h1>
 
-      <section>
-        <div id="title">
-          <h1>jQuery Allowed Chars  - simple plugin</h1>
-          <p>jQuery plugin to restrict users for typing only allowed chars for specified element</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/fosco-maestro">fosco-maestro</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+<p><a href="https://travis-ci.org/pvoznenko/jquery-allowed-chars-simple-plugin"><img src="https://travis-ci.org/pvoznenko/jquery-allowed-chars-simple-plugin.svg" alt="Build Status"></a>
+<a href="https://www.npmjs.org/package/jquery.allowed-chars"><img src="https://img.shields.io/npm/v/jquery.allowed-chars.svg" alt="NPM version"></a></p>
 
-        <p><a href="https://travis-ci.org/fosco-maestro/jquery-allowed-chars-simple-plugin"><img src="https://travis-ci.org/fosco-maestro/jquery-allowed-chars-simple-plugin.svg" alt="Build Status"></a></p>
+<p>jQuery plugin to restrict users for typing only allowed chars for specified element.</p>
 
 <p>This library requires <a href="http://jquery.com/">jQuery</a> to be loaded.</p>
 
 <h2>
-<a name="setup" class="anchor" href="#setup"><span class="octicon octicon-link"></span></a>Setup</h2>
+<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup</h2>
 
 <p>Include  jQuery library and the <code>jquery.allowed-chars.js</code> file.</p>
 
-<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/jquery.allowed-chars.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-</pre></div>
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>dist/jquery.allowed-chars.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
 
 <h3>
-<a name="download-plugin-from-jquery-plugins" class="anchor" href="#download-plugin-from-jquery-plugins"><span class="octicon octicon-link"></span></a>Download plugin from jQuery Plugins</h3>
+<a id="download-plugin-from-jquery-plugins" class="anchor" href="#download-plugin-from-jquery-plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download plugin from jQuery Plugins</h3>
 
 <p>You can download jQuery Allowed Chars simple plugin from <a href="http://plugins.jquery.com/">jQuery Plugins</a> here:
 <a href="http://plugins.jquery.com/jquery.allowed-chars/">http://plugins.jquery.com/jquery.allowed-chars/</a></p>
 
 <h3>
-<a name="install-with-bower" class="anchor" href="#install-with-bower"><span class="octicon octicon-link"></span></a>Install with Bower</h3>
+<a id="install-with-bower" class="anchor" href="#install-with-bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install with Bower</h3>
 
 <p>Install and manage jQuery Allowed Chars simple plugin using <a href="http://bower.io/">Bower</a>.</p>
 
@@ -66,7 +52,7 @@
 </code></pre>
 
 <h3>
-<a name="install-with-npm" class="anchor" href="#install-with-npm"><span class="octicon octicon-link"></span></a>Install with NPM</h3>
+<a id="install-with-npm" class="anchor" href="#install-with-npm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install with NPM</h3>
 
 <p>Install and manage jQuery Allowed Chars simple plugin using <a href="https://www.npmjs.org/">NPM</a>.</p>
 
@@ -74,59 +60,54 @@
 </code></pre>
 
 <h3>
-<a name="cdn" class="anchor" href="#cdn"><span class="octicon octicon-link"></span></a>CDN</h3>
+<a id="cdn" class="anchor" href="#cdn" aria-hidden="true"><span class="octicon octicon-link"></span></a>CDN</h3>
 
 <p>You can use <a href="http://www.cdnjs.com/">CDNJS</a> for this plugin on following link:
 <a href="http://www.cdnjs.com/libraries/jquery.allowed-chars">http://www.cdnjs.com/libraries/jquery.allowed-chars</a></p>
 
 <h2>
-<a name="usage-example" class="anchor" href="#usage-example"><span class="octicon octicon-link"></span></a>Usage Example</h2>
+<a id="usage-example" class="anchor" href="#usage-example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage Example</h2>
 
 <p>In our HTML code we have 4 inputs:</p>
 
 <div class="highlight highlight-html"><pre>Only integer chars [0123456789]: 
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'text'</span> <span class="na">id=</span><span class="s">"default"</span><span class="nt">/&gt;</span>
+&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">'</span>text<span class="pl-pds">'</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>default<span class="pl-pds">"</span></span>/&gt;
 
 Custom chars [a, B, 1, {space}, _]: 
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'text'</span> <span class="na">id=</span><span class="s">"custom"</span><span class="nt">/&gt;</span>
+&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">'</span>text<span class="pl-pds">'</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>custom<span class="pl-pds">"</span></span>/&gt;
 
 RegExp [/\d/] -- only integers: 
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'text'</span> <span class="na">id=</span><span class="s">"regexp"</span> <span class="nt">/&gt;</span>
+&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">'</span>text<span class="pl-pds">'</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>regexp<span class="pl-pds">"</span></span> /&gt;
 
 Custom chars [A, b, s, D] not case sensitive, full options: 
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'text'</span> <span class="na">id=</span><span class="s">"full"</span> <span class="nt">/&gt;</span>
-</pre></div>
+&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">'</span>text<span class="pl-pds">'</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>full<span class="pl-pds">"</span></span> /&gt;</pre></div>
 
 <p>So, to restrict input values to integers for input with id <code>default</code> use:</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// by default plugin allows only numerical characters: 0123456789</span>
-<span class="nx">$</span><span class="p">(</span><span class="s1">'#default'</span><span class="p">).</span><span class="nx">allowedChars</span><span class="p">();</span>
-</pre></div>
+<div class="highlight highlight-javascript"><pre><span class="pl-c">// by default plugin allows only numerical characters: 0123456789</span>
+$(<span class="pl-s"><span class="pl-pds">'</span>#default<span class="pl-pds">'</span></span>).allowedChars();</pre></div>
 
 <p>For a custom allowed char list, pass the string with chars as parameter:</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// you can specify a different list of allowed characters,</span>
-<span class="c1">// for example [a, B, 1, {space}, _]</span>
-<span class="c1">// list is by default case sensitive</span>
-<span class="nx">$</span><span class="p">(</span><span class="s1">'#custom'</span><span class="p">).</span><span class="nx">allowedChars</span><span class="p">(</span><span class="s1">'aB1 _'</span><span class="p">);</span>
-</pre></div>
+<div class="highlight highlight-javascript"><pre><span class="pl-c">// you can specify a different list of allowed characters,</span>
+<span class="pl-c">// for example [a, B, 1, {space}, _]</span>
+<span class="pl-c">// list is by default case sensitive</span>
+$(<span class="pl-s"><span class="pl-pds">'</span>#custom<span class="pl-pds">'</span></span>).allowedChars(<span class="pl-s"><span class="pl-pds">'</span>aB1 _<span class="pl-pds">'</span></span>);</pre></div>
 
 <p>You can also use a regular expression to restrict input values:</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// you can use regular expressions</span>
-<span class="c1">// \d - only integers allowed</span>
-<span class="nx">$</span><span class="p">(</span><span class="s1">'#regexp'</span><span class="p">).</span><span class="nx">allowedChars</span><span class="p">(</span><span class="sr">/\d/</span><span class="p">);</span>
-</pre></div>
+<div class="highlight highlight-javascript"><pre><span class="pl-c">// you can use regular expressions</span>
+<span class="pl-c">// \d - only integers allowed</span>
+$(<span class="pl-s"><span class="pl-pds">'</span>#regexp<span class="pl-pds">'</span></span>).allowedChars(<span class="pl-sr"><span class="pl-pds">/</span><span class="pl-c1">\d</span><span class="pl-pds">/</span></span>);</pre></div>
 
 <p>You can also pass an object with options for plugin initialization:</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// you can pass object with options.</span>
-<span class="c1">// For example, a list of allowed chars, without case sensitivity check</span>
-<span class="nx">$</span><span class="p">(</span><span class="s1">'#full'</span><span class="p">).</span><span class="nx">allowedChars</span><span class="p">({</span>
-    <span class="nx">allowed</span><span class="o">:</span> <span class="s1">'AbsD'</span><span class="p">,</span>
-    <span class="nx">caseSensitive</span><span class="o">:</span> <span class="kc">false</span>
-<span class="p">});</span>
-</pre></div>
+<div class="highlight highlight-javascript"><pre><span class="pl-c">// you can pass object with options.</span>
+<span class="pl-c">// For example, a list of allowed chars, without case sensitivity check</span>
+$(<span class="pl-s"><span class="pl-pds">'</span>#full<span class="pl-pds">'</span></span>).allowedChars({
+    allowed<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>AbsD<span class="pl-pds">'</span></span>,
+    caseSensitive<span class="pl-k">:</span> <span class="pl-c1">false</span>
+});</pre></div>
 
 <p>Be aware that <code>caseSensitive</code> option does not affect work of plugin if you use regular expressions.</p>
 
@@ -135,53 +116,57 @@ Custom chars [A, b, s, D] not case sensitive, full options:
 <ul>
 <li><a href="http://www.w3schools.com/jsref/jsref_obj_regexp.asp">http://www.w3schools.com/jsref/jsref_obj_regexp.asp</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions</a></li>
-</ul><h3>
-<a name="angularjs-directive" class="anchor" href="#angularjs-directive"><span class="octicon octicon-link"></span></a>AngularJS Directive</h3>
+</ul>
+
+<h3>
+<a id="angularjs-directive" class="anchor" href="#angularjs-directive" aria-hidden="true"><span class="octicon octicon-link"></span></a>AngularJS Directive</h3>
 
 <p>If you using <a href="https://angularjs.org/">AngularJS</a> in your project, you can write small Directive to use jQuery Allowed Chars plugin.</p>
 
 <p>First load plugin:</p>
 
-<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/jquery.allowed-chars.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-</pre></div>
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>dist/jquery.allowed-chars.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
 
 <p>Then create your directive for jQuery Allowed Chars plugin:</p>
 
-<div class="highlight highlight-javascript"><pre><span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'exampleModule'</span><span class="p">).</span><span class="nx">directive</span><span class="p">(</span><span class="s1">'allowedChars'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-    <span class="k">return</span> <span class="p">{</span>
-        <span class="nx">restrict</span><span class="o">:</span> <span class="s1">'A'</span><span class="p">,</span>
-        <span class="nx">link</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">scope</span><span class="p">,</span> <span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
-            <span class="c1">// allow only digits and low case letters</span>
-            <span class="nx">element</span><span class="p">.</span><span class="nx">allowedChars</span><span class="p">(</span><span class="sr">/[a-z]|[0-9]/</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="p">};</span>
-<span class="p">});</span>
-</pre></div>
+<div class="highlight highlight-javascript"><pre>angular.module(<span class="pl-s"><span class="pl-pds">'</span>exampleModule<span class="pl-pds">'</span></span>).directive(<span class="pl-s"><span class="pl-pds">'</span>allowedChars<span class="pl-pds">'</span></span>, <span class="pl-k">function</span>(){
+    <span class="pl-k">return</span> {
+        restrict<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>A<span class="pl-pds">'</span></span>,
+        <span class="pl-en">link</span><span class="pl-k">:</span> <span class="pl-k">function</span>(<span class="pl-smi">scope</span>, <span class="pl-smi">element</span>) {
+            <span class="pl-c">// allow only digits and low case letters</span>
+            element.allowedChars(<span class="pl-sr"><span class="pl-pds">/</span><span class="pl-c1">[<span class="pl-c1">a-z</span>]</span><span class="pl-k">|</span><span class="pl-c1">[<span class="pl-c1">0-9</span>]</span><span class="pl-pds">/</span></span>);
+        }
+    };
+});</pre></div>
 
 <p>Use new directive in your html element:</p>
 
 <div class="highlight highlight-html"><pre>Allow only digits and low case letters:
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'text'</span> <span class="na">allowed-chars</span><span class="nt">/&gt;</span>
-</pre></div>
+&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">'</span>text<span class="pl-pds">'</span></span> <span class="pl-e">allowed-chars</span>/&gt;</pre></div>
 
 <p>More about Directives in <a href="https://angularjs.org/">AngularJS</a> read following documentation: <a href="https://docs.angularjs.org/guide/directive">https://docs.angularjs.org/guide/directive</a></p>
 
 <h2>
-<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
 
 <p>You can run demo on <a href="http://jsfiddle.net/">JSFiddle</a>: <a href="http://jsfiddle.net/fosco/55XLd/">http://jsfiddle.net/fosco/55XLd/</a></p>
 
 <h2>
-<a name="copyright" class="anchor" href="#copyright"><span class="octicon octicon-link"></span></a>Copyright</h2>
+<a id="copyright" class="anchor" href="#copyright" aria-hidden="true"><span class="octicon octicon-link"></span></a>Copyright</h2>
 
-<p>Copyright (C) 2014 Pavlo Voznenko and other <a href="https://github.com/fosco-maestro/jquery-allowed-chars-simple-plugin/graphs/contributors">contributors</a>.</p>
+<p>Copyright (C) 2014 Pavlo Voznenko and other <a href="https://github.com/pvoznenko/jquery-allowed-chars-simple-plugin/graphs/contributors">contributors</a>.</p>
 
 <p>Distributed under the MIT License.</p>
-      </section>
 
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/pvoznenko/jquery-allowed-chars-simple-plugin">jQuery Allowed Chars  - simple plugin</a> is maintained by <a href="https://github.com/pvoznenko">pvoznenko</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
